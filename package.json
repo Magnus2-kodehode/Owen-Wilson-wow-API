@@ -1,6 +1,6 @@
 {
   "homepage": "https://https://magnus2-kodehode.github.io/Owen-Wilson-wow-API",
-  "name": "Owen-Wilson-wow-API",
+  "name": "owen-wilson-wow-api",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -14,7 +14,8 @@
   },
   "dependencies": {
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.6.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",
