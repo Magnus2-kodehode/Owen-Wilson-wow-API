@@ -7,10 +7,10 @@ export default function Nav() {
       <Link to='/Owen-Wilson-wow-API' className='nav-item'>
         Random
       </Link>
-      <Link to='' className='nav-item'>
+      <Link to='/Owen-Wilson-wow-API/browse_all' className='nav-item'>
         Browse all
       </Link>
-      <Link to='' className='nav-item'>
+      <Link to='/Owen-Wilson-wow-API/browse_by_movie' className='nav-item'>
         By movie
       </Link>
       <hr />
