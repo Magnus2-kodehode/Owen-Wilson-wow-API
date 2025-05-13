@@ -12,7 +12,7 @@ export default function App() {
       <Routes>
         <Route path='*' element={<Error/>}/>
         <Route path='/Owen-Wilson-wow-API' element={<Home/>}/>
-        <Route path='/Owen-Wilson-wow-API/arbeidslogg' element={<Documentation/>}/>
+        <Route path='/Owen-Wilson-wow-API/dokumentasjon' element={<Documentation/>}/>
       </Routes>
     </Router>
   )

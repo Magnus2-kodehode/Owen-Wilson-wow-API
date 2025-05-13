@@ -4,11 +4,11 @@ export default function Home() {
     <div className='main'>
       <div className="container-main">
         <div className="title">
-          Home
+          Wow!
         </div>
         <div className="container-text">
           <div className="text">
-            wow
+            Wow?
           </div>
         </div>
       </div>
