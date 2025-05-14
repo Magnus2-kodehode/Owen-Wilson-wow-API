@@ -18,7 +18,7 @@ export default function WowCard({ wow }) {
       <p><b>{character}:</b> {full_line}</p>
       <div className="wow-content">
         <img src={poster} alt={movie} />
-        <video controls src={video["360p"]}></video>
+        <video controls src={video["720p"]}></video>
       </div>
     </div>
   )

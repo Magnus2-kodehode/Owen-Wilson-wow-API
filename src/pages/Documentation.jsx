@@ -115,7 +115,7 @@ export default function Documentation() {
             <dl>
               <li>NPMs: gh-pages, react-router-dom</li>
               <li>Komponenter: Header, Nav, Wow.</li>
-              <li>Sider: Home med random wow, Browse for å se alle wows, BrowseByMovie for å se wows fra en bestemt film, Documentation hvor jeg dokumenterer oppgaven, Error for 404</li>
+              <li>Sider: WowRandom, WowBrowseAll, WowBrowseByMovie, Documentation hvor jeg dokumenterer oppgaven, Error for 404.</li>
               <li>Rekkefølge: sette opp prosjektet med Vite + React, lage en struktur for nettsiden, dokumentering og planlegging, sette opp API.</li>
               <li>Estimert tidsbruk: en dag for planlegging/dokumentering, et par timer for å sette opp struktur for nettsiden, en dag for API, 2-3 dager for hele oppgaven.</li>
             </dl>

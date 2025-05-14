@@ -3,18 +3,24 @@
   --text-link: rgb(101, 142, 231);
   --background-main: rgb(33, 33, 33);
   --background-header: rgb(22, 22, 22);
+
+  --yellow: rgb(215, 210, 70);
+  --blue: rgb(100, 190, 220);
 }
 
 * {
   font-family: system-ui, Helvetica, Arial, sans-serif;
   font-size: 17px;
   color: var(--text-main);
+  text-shadow: black 1px 1px 2px;
   padding: 0;
   margin: 0;
 }
 
 body {
-  background: var(--background-main);
+  /* background: var(--background-main); */
+  background: url(/assets/owen-wilson-bg.png) no-repeat fixed top;
+  background-size: cover;
 }
 
 hr {
@@ -80,6 +86,13 @@ a {
   gap: 10px;
   display: flex;
   align-items: center;
+  transition: 0.1s;
+}
+
+.nav-item:hover {
+  color: var(--blue);
+  border: var(--blue) 2px solid;
+  transform: scale(1.05);
 }
 
 .nav hr {

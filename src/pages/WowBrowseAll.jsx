@@ -68,13 +68,13 @@ export default function WowBrowseAll() {
               <option value="year">Year</option>
             </select>
           </label> */}
-          {/* <label>
+          <label>
             Order by:{' '}
             <select value={sortDirection} onChange={(e) => setSortDirection(e.target.value)}>
               <option value="asc">Ascending</option>
               <option value="desc">Descending</option>
             </select>
-          </label> */}
+          </label>
         </div>
         {loading ? <p>Loading...</p> : (
           <>
