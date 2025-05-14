@@ -121,7 +121,7 @@ select {
 
 .container-main {
   /* border: var(--text) 1px solid; */
-  width: 600px;
+  max-width: 600px;
   height: fit-content;
   display: flex;
   flex-direction: column;

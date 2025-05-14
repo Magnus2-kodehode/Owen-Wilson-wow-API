@@ -6,18 +6,16 @@ import WowBrowseAll from './pages/WowBrowseAll'
 import WowBrowseByMovie from './pages/WowBrowseByMovie'
 import Documentation from './pages/Documentation'
 
-
 export default function App() {
-
   return (
     <Router>
-      <Header/>
+      <Header />
       <Routes>
-        <Route path='*' element={<Error/>}/>
-        <Route path='/Owen-Wilson-wow-API' element={<WowRandom/>}/>
-        <Route path='/Owen-Wilson-wow-API/browse_all' element={<WowBrowseAll/>}/>
-        <Route path='/Owen-Wilson-wow-API/browse_by_movie' element={<WowBrowseByMovie/>}/>
-        <Route path='/Owen-Wilson-wow-API/dokumentasjon' element={<Documentation/>}/>
+        <Route path='*' element={<Error />} />
+        <Route path='/Owen-Wilson-wow-API' element={<WowRandom />} />
+        <Route path='/Owen-Wilson-wow-API/browse_all' element={<WowBrowseAll />} />
+        <Route path='/Owen-Wilson-wow-API/browse_by_movie' element={<WowBrowseByMovie />} />
+        <Route path='/Owen-Wilson-wow-API/dokumentasjon' element={<Documentation />} />
       </Routes>
     </Router>
   )

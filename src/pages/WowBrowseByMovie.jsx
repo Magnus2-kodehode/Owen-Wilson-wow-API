@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react"
-import WowCard from "../components/WowCard"
+import React, { useState, useEffect } from 'react'
+import WowCard from '../components/WowCard'
 
 export default function WowBrowseByMovie() {
   const [movies, setMovies] = useState([])
@@ -20,7 +20,9 @@ export default function WowBrowseByMovie() {
   const fetchMovieWow = async (movie) => {
     setLoading(true)
     try {
-      const response = await fetch(`https://owen-wilson-wow-api.onrender.com/wows/random?movie=${encodeURIComponent(movie)}`)
+      const response = await fetch(
+        `https://owen-wilson-wow-api.onrender.com/wows/random?movie=${encodeURIComponent(movie)}`
+      )
       const data = await response.json()
       setWow(data[0])
     } catch (err) {
@@ -39,19 +41,28 @@ export default function WowBrowseByMovie() {
 
   return (
     <div className='main'>
-      <div className="container-main">
-        <p className="title">
-          Browse by movie
-        </p>
-        <select onChange={e => setSelectedMovie(e.target.value)} value={selectedMovie}>
-          <option value="">Select movie</option>
+      <div className='container-main'>
+        <p className='title'>Browse by movie</p>
+        <select onChange={(e) => setSelectedMovie(e.target.value)} value={selectedMovie}>
+          <option value=''>Select movie</option>
           {movies.map((movie) => (
-            <option key={movie} value={movie}>{movie}</option>
+            <option key={movie} value={movie}>
+              {movie}
+            </option>
           ))}
         </select>
-        {loading ? <p>Loading...</p> : wow && <WowCard wow={wow}/>}
-        <div className="wow-nav">
-          {selectedMovie && <button onClick={() => {fetchMovieWow(selectedMovie)}} className="wow-nav-button">Next wow</button>}
+        {loading ? <p>Loading...</p> : wow && <WowCard wow={wow} />}
+        <div className='wow-nav'>
+          {selectedMovie && (
+            <button
+              onClick={() => {
+                fetchMovieWow(selectedMovie)
+              }}
+              className='wow-nav-button'
+            >
+              Next wow
+            </button>
+          )}
         </div>
       </div>
     </div>
